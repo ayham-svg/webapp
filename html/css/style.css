@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header met login knop rechtsboven */
+header {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 3;
+}
+
+.login {
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.login:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Hero sectie */
+.hero {
+    background: url('/image/achtergrond.webp') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* overlay */
+    z-index: 1;
+}
+
+.hero-content {
+    z-index: 2;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: 900;
+    margin: 20px 0;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 12px 24px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.hero-button:hover {
+    background-color: #f4f4f4;
+}
+.contact {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.contact-image {
+    flex: 1;
+    background: url('/image/fotocontact.webp') no-repeat center center/cover;
+}
+
+.contact-info {
+    flex: 1;
+    background-color: #fdfdf5;
+    padding: 100px 120px;  /* Meer padding naar rechts */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+}
+
+.contact-info h2 {
+    font-size: 3.5rem; /* Maak SEE YOU SOON groter */
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.contact-detail {
+    margin-bottom: 40px;
+    font-size: 1.3rem; /* Maak e-mail, telefoon enz. groter */
+    line-height: 1.8;
+}
+
+.contact-detail strong {
+    font-weight: bold;
+    font-size: 1.1rem; /* Ook de labels groter */
+    margin-bottom: 8px;
+    display: block;
+}
+.contact {
+    gap: 40px;
+}
+.section-divider {
+    border-top: 4px solid #7c7c7c; /* Lichtgrijze lijn */
+    margin: 0;
+    width: 100%;
+    margin: 0 auto 0px auto; /* centreren met wat ruimte eronder */
+}
+/* Login pagina styling */
+.login-container {
+    background-color: white;
+    padding: 40px 60px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    margin: auto;
+    margin-top: 10vh;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #555;
+}
